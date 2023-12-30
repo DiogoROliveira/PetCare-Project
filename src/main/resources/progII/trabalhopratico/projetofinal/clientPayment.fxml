@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="797.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progII.trabalhopratico.projetofinal.Controllers.Client.ClientPaymentController">
+   <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/backArrow.png" />
+   </ImageView>
+   <Label fx:id="clientLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="218.0" layoutY="25.0" prefHeight="35.0" prefWidth="362.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <Button layoutX="639.0" layoutY="442.0" mnemonicParsing="false" onAction="#payAppointment" prefHeight="36.0" prefWidth="124.0" text="Pagar Consulta" />
+   <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="218.0" layoutY="72.0" prefHeight="35.0" prefWidth="362.0" text="Selecione a consulta a pagar" textAlignment="CENTER">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <TableView fx:id="appointmentsTable" layoutX="132.0" layoutY="107.0" prefHeight="313.0" prefWidth="534.0" scaleShape="false" style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;">
+      <columns>
+         <TableColumn fx:id="locationColumn" prefWidth="109.0" text="Local" />
+         <TableColumn fx:id="dateColumn" prefWidth="83.0" text="Data" />
+         <TableColumn fx:id="serviceColumn" prefWidth="92.0" text="Serviço" />
+         <TableColumn fx:id="stateColumn" prefWidth="79.0" text="Estado" />
+         <TableColumn fx:id="totalColumn" prefWidth="58.0" text="Total" />
+         <TableColumn fx:id="employeeColumn" prefWidth="112.0" text="Funcionário" />
+      </columns>
+   </TableView>
+</Pane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0"
+      prefWidth="802.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="progII.trabalhopratico.projetofinal.Controllers.Admin.AdminListLocationsController">
+   <TableView fx:id="locationsTable" layoutX="52.0" layoutY="89.0" prefHeight="302.0" prefWidth="682.0"
+              scaleShape="false" style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;">
+      <columns>
+         <TableColumn fx:id="nameColumn" prefWidth="129.0" text="Nome"/>
+         <TableColumn fx:id="nifColumn" prefWidth="66.0" text="NIF"/>
+         <TableColumn fx:id="phoneColumn" prefWidth="92.0" text="Telefone"/>
+         <TableColumn fx:id="addressColumn" prefWidth="166.0" text="Morada"/>
+         <TableColumn fx:id="serviceTypeColumn" minWidth="0.0" prefWidth="104.0" text="Tipo Serviço"/>
+         <TableColumn fx:id="spColumn" prefWidth="124.0" text="Prestador de Serviço"/>
+      </columns>
+   </TableView>
+   <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="212.0" layoutY="33.0"
+          prefHeight="35.0" prefWidth="362.0" text="Selecione o local" textAlignment="CENTER">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Label>
+   <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#back"
+              pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/backArrow.png"/>
+   </ImageView>
+   <ListView fx:id="serviceNameList" layoutX="293.0" layoutY="424.0" prefHeight="200.0" prefWidth="200.0"
+             style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;"/>
+   <Text layoutX="300.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serviços"
+         wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </Text>
+   <ListView fx:id="employeeNameList" layoutX="52.0" layoutY="424.0" prefHeight="200.0" prefWidth="200.0"
+             style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;"/>
+   <Text layoutX="52.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionários"
+         wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </Text>
+   <ListView fx:id="productNameList" layoutX="536.0" layoutY="424.0" prefHeight="200.0" prefWidth="200.0"
+             style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;"/>
+   <Text layoutX="536.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtos"
+         wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </Text>
+</Pane>

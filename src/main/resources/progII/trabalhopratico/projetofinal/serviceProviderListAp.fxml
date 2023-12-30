@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="858.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progII.trabalhopratico.projetofinal.Controllers.ServiceProvider.ServiceProviderListApController">
+    <TableView fx:id="apTableView" layoutX="225.0" layoutY="96.0" prefHeight="329.0" prefWidth="612.0" style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;">
+      <columns>
+          <TableColumn fx:id="idColumn" prefWidth="45.0" text="ID" />
+          <TableColumn fx:id="clientColumn" prefWidth="127.0" text="Cliente" />
+          <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Data" />
+          <TableColumn fx:id="employeeColumn" prefWidth="133.0" text="Funcionário" />
+          <TableColumn fx:id="stateColumn" prefWidth="82.0" text="Estado" />
+          <TableColumn fx:id="serviceColumn" prefWidth="90.0" text="Serviço" />
+          <TableColumn fx:id="totalColumn" prefWidth="56.0" text="Total" />
+      </columns>
+    </TableView>
+    <Label fx:id="locationLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="67.0" layoutY="33.0" prefHeight="35.0" prefWidth="767.0" text="Label" textAlignment="CENTER">
+        <font>
+          <Font size="24.0" />
+        </font>
+    </Label>
+    <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../../Images/backArrow.png" />
+    </ImageView>
+    <Text fx:id="stateText" layoutX="35.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado da Consulta" wrappingWidth="143.13671875">
+        <font>
+          <Font size="16.0" />
+        </font>
+    </Text>
+    <ChoiceBox fx:id="stateChoiceBox" layoutX="35.0" layoutY="165.0" prefHeight="25.0" prefWidth="157.0" stylesheets="@../../../choiceBoxStyle.css" />
+    <Button fx:id="editButton" layoutX="704.0" layoutY="484.0" mnemonicParsing="false" onAction="#editAp" prefHeight="25.0" prefWidth="102.0" text="Editar" />
+    <Text fx:id="editStateText" layoutX="35.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Novo Estado" wrappingWidth="143.13671875">
+        <font>
+          <Font size="16.0" />
+        </font>
+    </Text>
+    <ChoiceBox fx:id="editStateChoiceBox" layoutX="35.0" layoutY="284.0" prefHeight="25.0" prefWidth="157.0" stylesheets="@../../../choiceBoxStyle.css" />
+    <Button fx:id="confirmButton" layoutX="578.0" layoutY="472.0" mnemonicParsing="false" onMouseClicked="#confirmChanges" prefHeight="25.0" prefWidth="102.0" text="Confirmar" />
+    <Button fx:id="cancelButton" layoutX="704.0" layoutY="472.0" mnemonicParsing="false" onMouseClicked="#cancelChanges" prefHeight="25.0" prefWidth="102.0" text="Cancelar" />
+    <Text fx:id="reasonText" layoutX="32.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motivo de Cancelamento" wrappingWidth="184.13671875">
+        <font>
+          <Font size="16.0" />
+        </font>
+    </Text>
+    <TextField fx:id="reasonField" layoutX="29.0" layoutY="460.0" prefHeight="25.0" prefWidth="266.0" />
+</Pane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0"
+      prefWidth="762.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="progII.trabalhopratico.projetofinal.Controllers.Admin.AdminListAPController">
+   <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="200.0" layoutY="33.0"
+          prefHeight="35.0" prefWidth="362.0" text="Lista de Consultas" textAlignment="CENTER">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Label>
+   <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#back"
+              pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/backArrow.png"/>
+   </ImageView>
+   <TableView fx:id="apTable" layoutX="22.0" layoutY="97.0" prefHeight="277.0" prefWidth="728.0" scaleShape="false"
+              style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;">
+      <columns>
+         <TableColumn fx:id="idColumn" prefWidth="32.0" text="ID"/>
+         <TableColumn fx:id="clientColumn" prefWidth="157.0" text="Cliente"/>
+         <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Data"/>
+         <TableColumn fx:id="employeeColumn" prefWidth="140.0" text="Funcionário"/>
+         <TableColumn fx:id="locationColumn" prefWidth="107.0" text="Local"/>
+         <TableColumn fx:id="totalColumn" prefWidth="50.0" text="Total"/>
+         <TableColumn fx:id="stateColumn" prefWidth="79.0" text="Estado"/>
+         <TableColumn fx:id="serviceColumn" prefWidth="86.0" text="Serviço"/>
+      </columns>
+   </TableView>
+</Pane>

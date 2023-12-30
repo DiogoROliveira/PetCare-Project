@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="573.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progII.trabalhopratico.projetofinal.Controllers.Client.ClientMakeAppointmentController">
+   <Text layoutX="218.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marcar Consulta" textAlignment="CENTER" wrappingWidth="180.13671875">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Text>
+   <Text layoutX="51.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local" wrappingWidth="83.13671875">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <Label fx:id="pickedLocation" layoutX="51.0" layoutY="108.0" prefHeight="27.0" prefWidth="442.0" text="Label">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Text layoutX="51.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serviço" wrappingWidth="83.13671875">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <ChoiceBox fx:id="serviceCB" layoutX="51.0" layoutY="284.0" prefWidth="150.0" stylesheets="@../../../choiceBoxStyle.css" />
+   <Text layoutX="51.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <DatePicker fx:id="datePicker" editable="false" layoutX="51.0" layoutY="368.0" prefHeight="25.0" prefWidth="150.0" />
+   <Text layoutX="51.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionário" wrappingWidth="114.13671875">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <ChoiceBox fx:id="employeeCB" layoutX="51.0" layoutY="206.0" prefWidth="150.0" stylesheets="@../../../choiceBoxStyle.css" />
+   <ImageView fitHeight="47.0" fitWidth="37.0" layoutX="14.0" layoutY="12.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/backArrow.png" />
+   </ImageView>
+   <Text layoutX="294.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Serviço" wrappingWidth="173.13671875">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <Label fx:id="specialtyLabel" layoutX="294.0" layoutY="283.0" prefHeight="27.0" prefWidth="243.0" text="Label">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Text layoutX="51.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço Final" wrappingWidth="130.037109375">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <Label fx:id="finalPriceLabel" layoutX="51.0" layoutY="458.0" prefHeight="27.0" prefWidth="243.0" text="€" visible="false">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Button fx:id="confirmButton" layoutX="424.0" layoutY="485.0" mnemonicParsing="false" onAction="#createAppointment" prefHeight="37.0" prefWidth="114.0" text="Confirmar">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <CheckBox fx:id="addProductsCheckBox" layoutX="294.0" layoutY="360.0" mnemonicParsing="false" onAction="#showProductsCB" prefHeight="17.0" prefWidth="76.0" text="Sim" />
+   <Text layoutX="294.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deseja adicionar outros produtos?" wrappingWidth="232.037109375">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Text>
+   <ChoiceBox fx:id="productsComboBox" layoutX="287.0" layoutY="393.0" prefHeight="25.0" prefWidth="173.0" visible="false" stylesheets="@../../../choiceBoxStyle.css" />
+</Pane>

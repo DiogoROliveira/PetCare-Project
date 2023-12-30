@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="757.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progII.trabalhopratico.projetofinal.Controllers.ServiceProvider.ServiceProviderMenuController">
+   <Text layoutX="219.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu Prestador de Serviço" wrappingWidth="304.13671875">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Text>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="139.0" mnemonicParsing="false" onAction="#createLocation" prefHeight="106.0" prefWidth="178.0" text="Adicionar Local de &#10;Entrega e Recolha " textAlignment="CENTER">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="514.0" layoutY="139.0" mnemonicParsing="false" onAction="#manageAppointments" prefHeight="106.0" prefWidth="178.0" text="Gerir Consultas" textAlignment="CENTER">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="290.0" layoutY="139.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="106.0" prefWidth="178.0" text="Adicionar &#10;Funcionário" textAlignment="CENTER">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Button layoutX="594.0" layoutY="18.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="145.0" text="Terminar Sessão" />
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="304.0" mnemonicParsing="false" onAction="#addService" prefHeight="106.0" prefWidth="178.0" text="Adicionar Serviço">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="290.0" layoutY="304.0" mnemonicParsing="false" onAction="#manageLocations" prefHeight="106.0" prefWidth="178.0" text="Gerir Locais">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="514.0" layoutY="304.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="106.0" prefWidth="178.0" text="Adicionar Produto">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+</AnchorPane>

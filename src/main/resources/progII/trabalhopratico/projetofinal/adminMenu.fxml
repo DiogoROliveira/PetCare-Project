@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="800.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progII.trabalhopratico.projetofinal.Controllers.Admin.AdminMenuController">
+   <Text layoutX="316.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu Admin" textAlignment="CENTER" wrappingWidth="168.13671875" AnchorPane.bottomAnchor="484.7255859375" AnchorPane.topAnchor="9.0224609375">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Text>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" layoutY="155.0" mnemonicParsing="false" onAction="#listLocations" prefHeight="86.0" prefWidth="151.0" text="Listar Locais" textAlignment="CENTER">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="540.0" layoutY="154.0" mnemonicParsing="false" onAction="#listServiceProviders" prefHeight="86.0" prefWidth="151.0" text="Listar Prestadores &#10;de Serviços" textAlignment="CENTER" textOverrun="CLIP">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="155.0" mnemonicParsing="false" onAction="#registerAdmin" prefHeight="86.0" prefWidth="151.0" text="Registar&#10;Administrador" textAlignment="CENTER" textOverrun="CLIP">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" layoutY="299.0" mnemonicParsing="false" onAction="#listServices" prefHeight="86.0" prefWidth="151.0" text="Listar Serviços" textAlignment="CENTER" textOverrun="CLIP">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="299.0" mnemonicParsing="false" onAction="#listClients" prefHeight="86.0" prefWidth="151.0" text="Listar Clientes" textAlignment="CENTER" textOverrun="CLIP">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="540.0" layoutY="299.0" mnemonicParsing="false" onAction="#listAppointments" prefHeight="86.0" prefWidth="151.0" text="Listar Consultas" textAlignment="CENTER" textOverrun="CLIP">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+   <Button layoutX="641.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="145.0" text="Terminar Sessão" />
+</AnchorPane>

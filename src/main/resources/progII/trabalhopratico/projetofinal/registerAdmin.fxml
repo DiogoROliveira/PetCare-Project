@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0"
+      prefWidth="522.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="progII.trabalhopratico.projetofinal.Controllers.LoginAndRegister.RegisterAdminController">
+   <Text layoutX="177.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registar Admin"
+         textAlignment="CENTER" wrappingWidth="167.13671875">
+      <font>
+         <Font name="System Bold" size="22.0"/>
+      </font>
+   </Text>
+   <TextField fx:id="nomeField" layoutX="110.0" layoutY="69.0" prefHeight="38.0" prefWidth="338.0"
+              promptText="Nome Completo">
+      <font>
+         <Font size="15.0"/>
+      </font>
+   </TextField>
+   <ImageView fitHeight="38.0" fitWidth="28.0" layoutX="75.0" layoutY="72.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@../../../Images/userEmote.png"/>
+   </ImageView>
+   <TextField fx:id="telefoneField" layoutX="110.0" layoutY="136.0" prefHeight="38.0" prefWidth="338.0"
+              promptText="Nº Telémovel">
+      <font>
+         <Font size="15.0"/>
+      </font>
+   </TextField>
+   <Text layoutX="75.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="📞" wrappingWidth="42.13671875">
+      <font>
+         <Font size="33.0"/>
+      </font>
+   </Text>
+   <TextField fx:id="moradaField" layoutX="110.0" layoutY="200.0" prefHeight="38.0" prefWidth="338.0"
+              promptText="Morada">
+      <font>
+         <Font size="15.0"/>
+      </font>
+   </TextField>
+   <Text layoutX="75.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🏠" wrappingWidth="42.13671875">
+      <font>
+         <Font size="33.0"/>
+      </font>
+   </Text>
+   <TextField fx:id="numCCField" layoutX="110.0" layoutY="259.0" prefHeight="38.0" prefWidth="338.0" promptText="CC/BI">
+      <font>
+         <Font size="15.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="nifField" layoutX="110.0" layoutY="318.0" prefHeight="38.0" prefWidth="338.0" promptText="NIF">
+      <font>
+         <Font size="15.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="usernameField" layoutX="110.0" layoutY="374.0" prefHeight="38.0" prefWidth="338.0"
+              promptText="Username">
+      <font>
+         <Font size="15.0"/>
+      </font>
+   </TextField>
+   <Text layoutX="75.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🔒" wrappingWidth="42.13671875">
+      <font>
+         <Font size="33.0"/>
+      </font>
+   </Text>
+   <Text layoutX="75.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🔒" wrappingWidth="42.13671875">
+      <font>
+         <Font size="33.0"/>
+      </font>
+   </Text>
+   <Text layoutX="82.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#" wrappingWidth="42.13671875">
+      <font>
+         <Font size="33.0"/>
+      </font>
+   </Text>
+   <Text layoutX="82.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#" wrappingWidth="42.13671875">
+      <font>
+         <Font size="33.0"/>
+      </font>
+   </Text>
+   <ImageView fitHeight="38.0" fitWidth="28.0" layoutX="77.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/userEmote.png"/>
+   </ImageView>
+   <Button layoutX="101.0" layoutY="574.0" mnemonicParsing="false" onAction="#register"
+           prefHeight="25.0" prefWidth="152.0" text="Registar"/>
+   <Button layoutX="279.0" layoutY="574.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="152.0"
+           text="Voltar"/>
+   <PasswordField fx:id="password1Field" layoutX="110.0" layoutY="435.0" prefHeight="38.0" prefWidth="338.0"
+                  promptText="Password">
+      <font>
+         <Font size="15.0"/>
+      </font>
+   </PasswordField>
+   <PasswordField fx:id="password2Field" layoutX="110.0" layoutY="496.0" onKeyTyped="#verifyPassword" prefHeight="38.0"
+                  prefWidth="338.0" promptText="Confirmar Password">
+      <font>
+         <Font size="15.0"/>
+      </font>
+   </PasswordField>
+   <Text fx:id="passwordError" fill="RED" layoutX="110.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0"
+         text="Passwords diferentes!" visible="false" wrappingWidth="143.13671875"/>
+</Pane>

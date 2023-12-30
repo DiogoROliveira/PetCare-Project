@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="884.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progII.trabalhopratico.projetofinal.Controllers.ServiceProvider.ServiceProviderManageLocationsController">
+   <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/backArrow.png" />
+   </ImageView>
+   <Label fx:id="spLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="261.0" layoutY="25.0" prefHeight="35.0" prefWidth="362.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <Button fx:id="deleteButton" layoutX="740.0" layoutY="442.0" mnemonicParsing="false" onAction="#deleteLocation" prefHeight="36.0" prefWidth="124.0" text="Eliminar Local" />
+   <TableView fx:id="locationsTable" layoutX="60.0" layoutY="78.0" prefHeight="223.0" prefWidth="534.0" scaleShape="false" style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;">
+      <columns>
+         <TableColumn fx:id="nameColumn" prefWidth="109.0" text="Nome" />
+         <TableColumn fx:id="nifColumn" text="NIF" />
+         <TableColumn fx:id="phoneColumn" prefWidth="89.0" text="Telefone" />
+         <TableColumn fx:id="addressColumn" prefWidth="175.0" text="Morada" />
+         <TableColumn fx:id="serviceTypeColumn" minWidth="0.0" text="Tipo Serviço" />
+      </columns>
+   </TableView>
+   <Button fx:id="editButton" layoutX="606.0" layoutY="442.0" mnemonicParsing="false" onAction="#editLocationData" prefHeight="36.0" prefWidth="124.0" text="Editar Dados" />
+   <ListView fx:id="employeeNamesList" layoutX="640.0" layoutY="101.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;" />
+   <Text layoutX="640.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionários" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text fx:id="nameText" layoutX="60.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" visible="false" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="nameField" layoutX="60.0" layoutY="346.0" prefHeight="25.0" prefWidth="341.0" visible="false" />
+   <Text fx:id="addressText" layoutX="60.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Morada" visible="false" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="addressField" layoutX="60.0" layoutY="402.0" prefHeight="25.0" prefWidth="341.0" visible="false" />
+   <Text fx:id="nifText" layoutX="424.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF" visible="false" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="nifField" layoutX="424.0" layoutY="346.0" prefHeight="25.0" prefWidth="141.0" visible="false" />
+   <Text fx:id="phoneText" layoutX="424.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" visible="false" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="phoneField" layoutX="424.0" layoutY="402.0" prefHeight="25.0" prefWidth="141.0" visible="false" />
+   <Text fx:id="serviceTypeText" layoutX="611.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Serviço" visible="false" wrappingWidth="114.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="serviceTypeField" layoutX="612.0" layoutY="380.0" prefHeight="25.0" prefWidth="181.0" visible="false" />
+   <Button fx:id="cancelButton" layoutX="606.0" layoutY="435.0" mnemonicParsing="false" onAction="#cancelChange" prefHeight="36.0" prefWidth="124.0" text="Cancelar" />
+   <Button fx:id="confirmButton" layoutX="740.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#confirmChange" prefHeight="36.0" prefWidth="124.0" text="Confirmar" />
+</Pane>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="910.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progII.trabalhopratico.projetofinal.Controllers.ServiceProvider.ServiceProviderAddEmployeeController">
+   <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/backArrow.png" />
+   </ImageView>
+   <Label fx:id="locationLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="261.0" layoutY="25.0" prefHeight="35.0" prefWidth="362.0" text="Selecione o local" textAlignment="CENTER">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <Button fx:id="removeButton" layoutX="765.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#removeEmployee" prefHeight="36.0" prefWidth="131.0" text="Remover Funcionário" />
+   <TableView fx:id="locationsTable" layoutX="60.0" layoutY="78.0" prefHeight="223.0" prefWidth="534.0" scaleShape="false" style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;">
+      <columns>
+         <TableColumn fx:id="nameColumn" prefWidth="109.0" text="Nome" />
+         <TableColumn fx:id="nifColumn" text="NIF" />
+         <TableColumn fx:id="phoneColumn" prefWidth="89.0" text="Telefone" />
+         <TableColumn fx:id="addressColumn" prefWidth="175.0" text="Morada" />
+         <TableColumn fx:id="serviceTypeColumn" minWidth="0.0" text="Tipo Serviço" />
+      </columns>
+   </TableView>
+   <Button fx:id="addButton" layoutX="617.0" layoutY="552.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="36.0" prefWidth="141.0" text="Adicionar Funcionário" />
+   <ListView fx:id="employeeNamesList" layoutX="640.0" layoutY="101.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;" />
+   <Text layoutX="640.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionários" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text fx:id="nameText" layoutX="60.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="nameField" layoutX="60.0" layoutY="346.0" prefHeight="25.0" prefWidth="419.0" />
+   <Text fx:id="addressText" layoutX="60.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Morada" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="addressField" layoutX="60.0" layoutY="461.0" prefHeight="25.0" prefWidth="419.0" />
+   <Text fx:id="nifText" layoutX="231.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="nifField" layoutX="231.0" layoutY="408.0" prefHeight="25.0" prefWidth="141.0" />
+   <Text fx:id="phoneText" layoutX="60.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="phoneField" layoutX="60.0" layoutY="408.0" prefHeight="25.0" prefWidth="141.0" />
+   <Button fx:id="cancelButton" layoutX="617.0" layoutY="544.0" mnemonicParsing="false" onAction="#cancelAddEmployee" prefHeight="36.0" prefWidth="141.0" text="Cancelar" />
+   <Button fx:id="confirmButton" layoutX="765.0" layoutY="544.0" mnemonicParsing="false" onMouseClicked="#confirmChange" prefHeight="36.0" prefWidth="131.0" text="Confirmar" />
+   <Text fx:id="ccText" layoutX="396.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CC" wrappingWidth="36.0">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="ccField" layoutX="396.0" layoutY="408.0" prefHeight="25.0" prefWidth="141.0" />
+   <Text fx:id="usernameText" layoutX="640.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="usernameField" layoutX="640.0" layoutY="353.0" prefHeight="25.0" prefWidth="182.0" />
+   <Text fx:id="passwordText" layoutX="640.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <PasswordField fx:id="passwordField" layoutX="642.0" layoutY="418.0" prefHeight="25.0" prefWidth="182.0" />
+   <Text fx:id="confirmPassText" layoutX="642.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmar Password" wrappingWidth="131.0">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <PasswordField fx:id="confirmPassField" layoutX="643.0" layoutY="479.0" onKeyTyped="#verifyPass" prefHeight="25.0" prefWidth="182.0" />
+   <Text fx:id="verifyPassText" fill="RED" layoutX="646.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passwords diferentes!" visible="false" wrappingWidth="122.01953125" />
+   <Text fx:id="employeeTypeText" layoutX="60.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Funcionário" wrappingWidth="131.0">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <ChoiceBox fx:id="employeeTypeCB" layoutX="60.0" layoutY="522.0" prefHeight="25.0" prefWidth="160.0" stylesheets="@../../../choiceBoxStyle.css" />
+   <Text fx:id="vetText" layoutX="270.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de Carteira Profissional" wrappingWidth="141.0">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="vetField" layoutX="270.0" layoutY="535.0" prefHeight="25.0" prefWidth="141.0" />
+</Pane>

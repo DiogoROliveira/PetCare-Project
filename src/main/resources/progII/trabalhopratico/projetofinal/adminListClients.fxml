@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0"
+      prefWidth="762.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="progII.trabalhopratico.projetofinal.Controllers.Admin.AdminListClientsController">
+   <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="200.0" layoutY="33.0"
+          prefHeight="35.0" prefWidth="362.0" text="Lista de Clientes" textAlignment="CENTER">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Label>
+   <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#back"
+              pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/backArrow.png"/>
+   </ImageView>
+   <TableView fx:id="clientTable" layoutX="22.0" layoutY="97.0" prefHeight="277.0" prefWidth="728.0" scaleShape="false"
+              style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;">
+      <columns>
+         <TableColumn fx:id="usernameColumn" prefWidth="104.0" text="Username"/>
+         <TableColumn fx:id="nameColumn" prefWidth="179.0" text="Nome"/>
+         <TableColumn fx:id="ccColumn" prefWidth="73.0" text="CC"/>
+         <TableColumn fx:id="nifColumn" text="NIF"/>
+         <TableColumn fx:id="phoneColumn" prefWidth="113.0" text="Telémovel"/>
+         <TableColumn fx:id="addressColumn" prefWidth="176.0" text="Morada"/>
+      </columns>
+   </TableView>
+</Pane>

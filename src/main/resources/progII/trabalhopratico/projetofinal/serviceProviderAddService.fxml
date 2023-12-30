@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="910.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progII.trabalhopratico.projetofinal.Controllers.ServiceProvider.ServiceProviderAddServiceController">
+   <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/backArrow.png" />
+   </ImageView>
+   <Label fx:id="locationLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="261.0" layoutY="25.0" prefHeight="35.0" prefWidth="362.0" text="Selecione o local" textAlignment="CENTER">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <Button fx:id="removeButton" layoutX="765.0" layoutY="420.0" mnemonicParsing="false" onMouseClicked="#removeService" prefHeight="36.0" prefWidth="131.0" text="Remover Serviço" />
+   <TableView fx:id="locationsTable" layoutX="60.0" layoutY="78.0" prefHeight="223.0" prefWidth="534.0" scaleShape="false" style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;">
+      <columns>
+         <TableColumn fx:id="nameColumn" prefWidth="104.0" text="Nome" />
+         <TableColumn fx:id="nifColumn" prefWidth="85.0" text="NIF" />
+         <TableColumn fx:id="phoneColumn" prefWidth="89.0" text="Telefone" />
+         <TableColumn fx:id="addressColumn" prefWidth="160.0" text="Morada" />
+         <TableColumn fx:id="serviceTypeColumn" minWidth="0.0" prefWidth="95.0" text="Tipo Serviço" />
+      </columns>
+   </TableView>
+   <Button fx:id="addButton" layoutX="617.0" layoutY="420.0" mnemonicParsing="false" onAction="#addService" prefHeight="36.0" prefWidth="141.0" text="Adicionar Serviço" />
+   <ListView fx:id="serviceNameList" layoutX="640.0" layoutY="101.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;" />
+   <Text layoutX="640.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serviços" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text fx:id="nameText" layoutX="60.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="nameField" layoutX="60.0" layoutY="346.0" prefHeight="25.0" prefWidth="419.0" />
+   <Text fx:id="serviceTypeText" layoutX="231.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Serviço" wrappingWidth="111.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="serviceTypeField" layoutX="231.0" layoutY="408.0" prefHeight="25.0" prefWidth="247.0" />
+   <Text fx:id="priceText" layoutX="60.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço" wrappingWidth="84.01953125">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="priceField" layoutX="60.0" layoutY="408.0" prefHeight="25.0" prefWidth="141.0" />
+   <Button fx:id="cancelButton" layoutX="617.0" layoutY="410.0" mnemonicParsing="false" onAction="#cancelAddService" prefHeight="36.0" prefWidth="141.0" text="Cancelar" />
+   <Button fx:id="confirmButton" layoutX="765.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#confirmChange" prefHeight="36.0" prefWidth="131.0" text="Confirmar" />
+</Pane>

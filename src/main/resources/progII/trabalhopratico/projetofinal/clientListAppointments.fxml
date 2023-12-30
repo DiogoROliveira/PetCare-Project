@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="797.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progII.trabalhopratico.projetofinal.Controllers.Client.ClientListAppointmentsController">
+   <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/backArrow.png" />
+   </ImageView>
+   <Label fx:id="clientLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="218.0" layoutY="25.0" prefHeight="35.0" prefWidth="362.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <Text layoutX="42.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado da Consulta" wrappingWidth="143.13671875">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Text>
+   <ChoiceBox fx:id="stateChoiceBox" layoutX="39.0" layoutY="165.0" prefWidth="150.0" stylesheets="@../../../choiceBoxStyle.css" />
+   <TableView fx:id="appointmentsTable" layoutX="212.0" layoutY="78.0" prefHeight="313.0" prefWidth="534.0" scaleShape="false" style="-fx-background-color: #fecea8; -fx-control-inner-background: #fecea8;">
+      <columns>
+         <TableColumn fx:id="locationColumn" prefWidth="128.0" text="Local" />
+         <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Data" />
+         <TableColumn fx:id="serviceColumn" prefWidth="81.0" text="Serviço" />
+         <TableColumn fx:id="stateColumn" prefWidth="79.0" text="Estado" />
+         <TableColumn fx:id="totalColumn" prefWidth="58.0" text="Total" />
+         <TableColumn fx:id="employeeColumn" prefWidth="112.0" text="Funcionário" />
+      </columns></TableView>
+   <Text fx:id="reasonText" layoutX="22.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motivo de Cancelamento" wrappingWidth="184.13671875">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Text>
+   <Label fx:id="reasonLabel" contentDisplay="RIGHT" layoutX="22.0" layoutY="432.0" prefHeight="35.0" prefWidth="362.0" text="Label" textAlignment="CENTER">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+</Pane>

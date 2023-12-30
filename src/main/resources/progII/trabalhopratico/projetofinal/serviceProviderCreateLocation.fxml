@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0"
+      prefWidth="615.0" style="-fx-background-color: #c39c83;" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="progII.trabalhopratico.projetofinal.Controllers.ServiceProvider.ServiceProviderCreateLocationController">
+   <Text layoutX="155.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Criar Local de Entrega/Recoçha">
+      <font>
+         <Font size="22.0"/>
+      </font>
+   </Text>
+   <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#back"
+              pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../Images/backArrow.png"/>
+   </ImageView>
+   <TextField fx:id="locationNameTF" layoutX="155.0" layoutY="106.0" prefHeight="29.0" prefWidth="302.0"/>
+   <Text layoutX="155.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" wrappingWidth="70.0">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Text>
+   <TextField fx:id="addressTF" layoutX="155.0" layoutY="167.0" prefHeight="29.0" prefWidth="302.0"/>
+   <Text layoutX="155.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Morada" wrappingWidth="70.0">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Text>
+   <TextField fx:id="locationNifTF" layoutX="155.0" layoutY="232.0" prefHeight="29.0" prefWidth="302.0"/>
+   <Text layoutX="155.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF" wrappingWidth="70.0">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Text>
+   <TextField fx:id="locationPhoneTF" layoutX="155.0" layoutY="295.0" prefHeight="29.0" prefWidth="302.0"/>
+   <Text layoutX="155.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" wrappingWidth="70.0">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Text>
+   <TextField fx:id="serviceTypeTF" layoutX="155.0" layoutY="362.0" prefHeight="29.0" prefWidth="302.0"/>
+   <Text layoutX="155.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Serviço"
+         wrappingWidth="126.0">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Text>
+   <Button layoutX="227.0" layoutY="433.0" mnemonicParsing="false" onAction="#registerLocation" prefHeight="25.0"
+           prefWidth="159.0" text="Registar">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </Button>
+</Pane>
