@@ -11,23 +11,23 @@ import java.util.Optional;
 
 public class ServiceProviderMenuController {
 
-    @FXML // FEITO
+    @FXML
     void addEmployee(ActionEvent event) {
         LoadFXML.getInstance().loadResource("serviceProviderAddEmployee.fxml", "Adicionar Funcionário", event);
     }
 
-    @FXML // FEITO
+    @FXML
     void addService(ActionEvent event) {
         LoadFXML.getInstance().loadResource("serviceProviderAddService.fxml", "Adicionar Serviço", event);
     }
 
-    @FXML // FEITO
+    @FXML
     void createLocation(ActionEvent event) {
         LoadFXML.getInstance().loadResource("serviceProviderCreateLocation.fxml", "Criar Local", event);
     }
 
-    @FXML // FEITO
-    void addProduct(ActionEvent event){
+    @FXML
+    void addProduct(ActionEvent event) {
         LoadFXML.getInstance().loadResource("serviceProviderAddProd.fxml", "Gerir Produtos", event);
     }
 
@@ -39,21 +39,22 @@ public class ServiceProviderMenuController {
             alert.setHeaderText("Deseja terminar sessão?");
             Optional<ButtonType> result = alert.showAndWait();
 
-            if(result.isPresent() && result.get() == ButtonType.OK){
+            if (result.isPresent() && result.get() == ButtonType.OK) {
                 LoadFXML.getInstance().loadResource("login.fxml", "Login", event);
             }
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
 
-    @FXML // FEITO
+    @FXML
     void manageLocations(ActionEvent event) {
-        LoadFXML.getInstance().loadResource("serviceProviderManageLocations.fxml", "Locais de" + CurrentUser.serviceProvider.getNome(), event);
+        LoadFXML.getInstance().loadResource("serviceProviderManageLocations.fxml",
+                "Locais de" + CurrentUser.serviceProvider.getNome(), event);
     }
 
-    @FXML // FEITO
+    @FXML
     void manageAppointments(ActionEvent event) {
         LoadFXML.getInstance().loadResource("serviceProviderListLocations.fxml", "Escolher Local", event);
     }

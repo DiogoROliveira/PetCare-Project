@@ -10,27 +10,27 @@ import java.util.Optional;
 
 public class AdminMenuController {
 
-    @FXML // FEITO
+    @FXML
     void listAppointments(ActionEvent event) {
         LoadFXML.getInstance().loadResource("adminListAP.fxml", "Lista de Consultas", event);
     }
 
-    @FXML // FEITO
+    @FXML
     void listClients(ActionEvent event) {
         LoadFXML.getInstance().loadResource("adminListClients.fxml", "Lista de Clientes", event);
     }
 
-    @FXML // FEITO
+    @FXML
     void listLocations(ActionEvent event) {
         LoadFXML.getInstance().loadResource("adminListLocations.fxml", "Lista de Locais", event);
     }
 
-    @FXML // FEITO
+    @FXML
     void listServiceProviders(ActionEvent event) {
         LoadFXML.getInstance().loadResource("adminListSP.fxml", "Lista de Prestadores de Serviço", event);
     }
 
-    @FXML // FEITO
+    @FXML
     void listServices(ActionEvent event) {
         LoadFXML.getInstance().loadResource("adminListServices.fxml", "Lista de Serviços", event);
     }
@@ -43,15 +43,15 @@ public class AdminMenuController {
             alert.setHeaderText("Deseja terminar sessão?");
 
             Optional<ButtonType> result = alert.showAndWait();
-            if(result.isPresent() && result.get() == ButtonType.OK){
+            if (result.isPresent() && result.get() == ButtonType.OK) {
                 LoadFXML.getInstance().loadResource("login.fxml", "Login", event);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
 
-    @FXML // FEITO
+    @FXML
     void registerAdmin(ActionEvent event) {
         LoadFXML.getInstance().loadResource("registerAdmin.fxml", "Registar Admin", event);
     }
